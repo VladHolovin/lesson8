@@ -36,4 +36,41 @@ h2{
     border-radius: 20px;
     width: 1300px;
     height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.grey-square{
+    width: 100px;
+    height: 100px;
+    border-radius: 0%;
+    background-color: silver;
+    animation-name:grey-square;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-direction: alternate-reverse;
+    transform: skew(-20deg);
+    
+  
+
+}
+@keyframes grey-square{
+  0%{
+    transform: skew(-20deg);
+  }
+  25%{
+    background-color:rgb(209, 68, 68);
+  }
+  50%{
+    background-color:red ;
+    
+  }
+  75%{
+    background-color: rgb(224, 153, 94);
+  }
+  100%{
+    transform: skew(20deg);
+    background-color:rgb(255, 106, 7) ;
+  }
 }

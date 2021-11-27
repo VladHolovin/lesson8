@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="/css/style.css">
 
 </head>
+
 <body>
     <header>
         <h1>Lesson 8.Images.Font Awasome.Basic animation</h1>
@@ -25,14 +27,30 @@
             </div>
             <h2>Transform</h2>
             <div class="transform">
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-
+                <div class="grey-square"></div>
+                <div class="grey-square"></div>
+                <div class="grey-square"></div>
             </div>
+            <h2>CSS Backround</h2>
+            <div class="background">
+                <div class="img_pictures">
+                    <img src="/images/marvel.jpg">
+                </div>
+                <h2> Images(HTML Picture)</h2>
+                <div class="img_pictures">
+                    <picture>
+                        <source srcset="../images/marvel.jpg" type="image/jpeg" media="(min-width:1330px)">
+                        <source srcset="../images/dc.jpg" type="image/jpeg" media="(min-width: 992px)">
+                        <source srcset="../images/starwars.png" type="image/png" media="(max-width: 992px)"> 
+                        <img src="/images/marvel.jpg" alt="">                   
+                    </picture>
+                </div>
+            </div>
+
 
 
         </div>
     </div>
 </body>
+
 </html>
